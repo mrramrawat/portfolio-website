@@ -1,0 +1,168 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Blog Section Styles */
+#blog {
+  background-color: #48274a;
+  padding: 60px 0;
+}
+
+.title-box {
+  margin-bottom: 40px;
+}
+
+
+.title-box .subtitle-a {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.title-box .line-mf {
+  width: 100px;
+  height: 3px;
+  background-color: #26072c;
+  margin: 20px auto 0;
+}
+
+/* Card Styles */
+.card-blog {
+  background-color: #321637;
+  border: none;
+  border-radius: 10px;
+ 
+}
+
+.card-blog:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-img img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-category-box {
+  margin-bottom: 10px;
+}
+
+.card-category {
+  display: inline-block;
+  background-color: #3f1147;
+  color:#ffffff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #652586;
+  margin-top: 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #452848;
+  border-top: 1px solid #350c43;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-footer .post-author {
+  font-size: 0.9rem;
+  color: #ff9900;
+}
+
+.card-footer .post-author i {
+  margin-right: 2px;
+}
+
+.card-footer .post-date {
+  font-size: 0.9rem;
+  color: #4c1b68;
+}
+
+.card-footer .post-date i {
+  margin-right: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .title-box h3 {
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card-description {
+    font-size: 0.95rem;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-footer .post-author,
+  .card-footer .post-date {
+    margin-top: 5px;
+  }
+}

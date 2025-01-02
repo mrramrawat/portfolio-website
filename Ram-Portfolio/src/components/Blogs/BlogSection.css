@@ -1,0 +1,136 @@
+/* Blog Section Styles */
+#blog {
+	background-color: #f9f9f9;
+	padding: 60px 0;
+  }
+  
+  .title-box {
+	margin-bottom: 40px;
+  }
+  
+  .title-box h3 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: #333;
+  }
+  
+  .title-box .subtitle-a {
+	font-size: 1.2rem;
+	color: #777;
+  }
+  
+  .title-box .line-mf {
+	width: 100px;
+	height: 3px;
+	background-color: #ff6600;
+	margin: 20px auto 0;
+  }
+  
+  /* Card Styles */
+  .card-blog {
+	background-color: #fff;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-blog:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-img img {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width: 100%;
+	height: auto;
+  }
+  
+  .card-body {
+	padding: 20px;
+  }
+  
+  .card-category-box {
+	margin-bottom: 10px;
+  }
+  
+  .card-category {
+	display: inline-block;
+	background-color: #ff6600;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 20px;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	font-weight: bold;
+  }
+  
+  .card-title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #333;
+	margin-top: 10px;
+  }
+  
+  .card-description {
+	font-size: 1rem;
+	color: #555;
+	line-height: 1.6;
+	margin-top: 10px;
+  }
+  
+  .card-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+	background-color: #f8f8f8;
+	border-top: 1px solid #eaeaea;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+  }
+  
+  .card-footer .post-author {
+	font-size: 0.9rem;
+	color: #ff9900;
+  }
+  
+  .card-footer .post-author i {
+	margin-right: 2px;
+  }
+  
+  .card-footer .post-date {
+	font-size: 0.9rem;
+	color: #888;
+  }
+  
+  .card-footer .post-date i {
+	margin-right: 5px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+	.title-box h3 {
+	  font-size: 2rem;
+	}
+  
+	.card-title {
+	  font-size: 1.3rem;
+	}
+  
+	.card-description {
+	  font-size: 0.95rem;
+	}
+  
+	.card-footer {
+	  flex-direction: column;
+	  text-align: center;
+	}
+  
+	.card-footer .post-author,
+	.card-footer .post-date {
+	  margin-top: 5px;
+	}
+  }
+  
